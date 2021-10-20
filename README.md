@@ -1,27 +1,23 @@
-# Untitled4
+Питання та відповіді:
+__________________________________________________________________________
+1. What is SPA? Explain in your own words
+SPA - це веб-додаток який поміщається на одній сторінці. Весь код виконується за допомогою єдиного стека сторінок. Перехід між сторінками виконується без перезавантаження всієї сторінки.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+2. What is the difference between framework and library?
+Технічно бібліотека відрізняється від фреймворка тим, що називається інверсією управління.
+Використовуючи бібліотеку, програміст самостійно відповідає за потік додатку. Тільки він вирішує, коли залучати до роботи сторонню функціональність.
+Фреймворк ж сам відповідає за потік. Він надає кілька місць для розміщення вашого коду, але викликатися його чи ні - вирішує він сам.
 
-## Development server
+3. Name a few advantages of angular
+   1. Структура та архітектура спеціально створені для великої масштабованості проєкту.
+   2. зрілий фреймворк, який має хорошу підтримку з боку учасників
+   
+4. Why do we need CLI in Angular?
+    Для створення, розробки та підтримки Angular
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+5. Name CLI command to create a component
+   ng generate component [name of component]
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. Explain what do you understand by DRY?
+   DRY — don’t repeat yourself / не повторюте себе.
+Це використання коду в одному місці (функції), для уникнення його дублювання. 
