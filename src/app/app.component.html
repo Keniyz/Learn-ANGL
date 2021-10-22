@@ -1,0 +1,27 @@
+<div class='text'><H1>Гра в "Камінь, ножиці та бумага"</H1></div>
+<div class='bodytext'><H2>Для того щоб почати гру, зробіть вибір натиснувши на один з малюнків </H2></div>
+<div class='main'>
+  <div class='box'><input (click)="onCLICK(1)" type="image"  class='image' src="assets/bumaga.jpg" ></div>
+  <div class='box'><input (click)="onCLICK(2)" type="image" class='image' src="assets/noj.jpg" ></div>
+  <div class='box'><input (click)="onCLICK(3)" type="image" class='image' src="assets/Camen_.jpg" ></div>
+</div>
+<div class='result'>Вибір компютера:
+  <ng-container *ngIf="computerChoice <= 0.4"><b>Камінь</b></ng-container>
+  <ng-container *ngIf="computerChoice > 0.4 && computerChoice <= 0.7"><b>Бумага</b></ng-container>
+  <ng-container *ngIf="computerChoice > 0.7 && computerChoice <= 1"><b>Ножиці</b></ng-container>
+</div>
+<div class='result'>Ви вибрали:
+  <ng-container *ngIf="result === 1"><b>Бумага</b></ng-container>
+  <ng-container *ngIf="result === 2"><b>Ножиці</b></ng-container>
+  <ng-container *ngIf="result === 3"><b>Камінь</b></ng-container>
+  <ng-container *ngIf="result === 0"><b>Зробіть вибір!</b></ng-container>
+</div>
+<hr>
+<div class='body'><h4>Результат: </h4>
+  <ng-container *ngIf="result_of_game==='Ви перемогли!!'"><div class='bodytext'><h1><b>Ви перемогли!</b></h1></div></ng-container>
+  <ng-container *ngIf="result_of_game==='Ви програли!'"><div class='bodytextfail'><h1><b>Ви програли!</b></h1></div></ng-container>
+  <ng-container *ngIf="result_of_game==='Нічія!'"><div><h1><b>Нічія!</b></h1></div></ng-container>
+</div>
+
+
+
