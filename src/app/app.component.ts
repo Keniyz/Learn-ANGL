@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //const a: Int;
-  public computerChoice:any = 0;
+  public computerChoice:any;
   public result:any=0;
   public result_of_game:string='';
   onCLICK(data:number) {

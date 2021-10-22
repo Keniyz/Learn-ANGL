@@ -5,15 +5,15 @@
   <div class='box'><input (click)="onCLICK(2)" type="image" class='image' src="assets/noj.jpg" ></div>
   <div class='box'><input (click)="onCLICK(3)" type="image" class='image' src="assets/Camen_.jpg" ></div>
 </div>
-<div class='result'>Вибір компютера:
-  <ng-container *ngIf="computerChoice <= 0.4"><b>Камінь</b></ng-container>
-  <ng-container *ngIf="computerChoice > 0.4 && computerChoice <= 0.7"><b>Бумага</b></ng-container>
-  <ng-container *ngIf="computerChoice > 0.7 && computerChoice <= 1"><b>Ножиці</b></ng-container>
+<div class='result'>
+  <ng-container *ngIf="computerChoice <= 0.4">Вибір компютера: <b>Камінь</b></ng-container>
+  <ng-container *ngIf="computerChoice > 0.4 && computerChoice <= 0.7">Вибір компютера: <b>Бумага</b></ng-container>
+  <ng-container *ngIf="computerChoice > 0.7 && computerChoice <= 1">Вибір компютера: <b>Ножиці</b></ng-container>
 </div>
-<div class='result'>Ви вибрали:
-  <ng-container *ngIf="result === 1"><b>Бумага</b></ng-container>
-  <ng-container *ngIf="result === 2"><b>Ножиці</b></ng-container>
-  <ng-container *ngIf="result === 3"><b>Камінь</b></ng-container>
+<div class='result'>
+  <ng-container *ngIf="result === 1">Ви вибрали: <b>Бумага</b></ng-container>
+  <ng-container *ngIf="result === 2">Ви вибрали: <b>Ножиці</b></ng-container>
+  <ng-container *ngIf="result === 3">Ви вибрали: <b>Камінь</b></ng-container>
   <ng-container *ngIf="result === 0"><b>Зробіть вибір!</b></ng-container>
 </div>
 <hr>
